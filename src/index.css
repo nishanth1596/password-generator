@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-veryDarkGrey-18171F: #18171f;
+  --color-DarkGrey-24232c: #24232c;
+  --color-817D92: #817d92;
+  --color-AlmostWhite-E6E5EA: #e6e5ea;
+  --color-NeonGreen-A4FFAF: #a4ffaf;
+  --color-F64A4A: #f64a4a;
+  --color-FB7C58: #fb7c58;
+  --color-F8CD65: #f8cd65;
+  --color-14131b: #14131b;
+  --color-08070b: #08070b;
+
+  /* Font family */
+  --font-jetbrainsMono: "JetBrains Mono", "serif";
+}
+/* from-14131b to-08070b */
+
+@layer components {
+  .linearGradient {
+    background-image: linear-gradient(to bottom, #14131b, #08070b);
+  }
+}
