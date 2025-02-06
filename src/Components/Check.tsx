@@ -1,23 +1,24 @@
 type CheckProps = {
   name: string;
+  isActive?: boolean;
 };
 
-function Check({ name }: CheckProps) {
+const base = "border-AlmostWhite-E6E5EA h-5 w-5 inset-0.5 border-2";
+const active = "bg-NeonGreen-A4FFAF flex h-5 w-5 items-center justify-center";
+
+function Check({ name, isActive }: CheckProps) {
   return (
-    <div className="text-AlmostWhite-E6E5EA flex items-center gap-5 text-base leading-[1.31rem] font-bold">
-      <svg
-        width="14"
-        height="12"
-        xmlns="http://www.w3.org/2000/svg"
-        className="inset-0.5 h-5 w-5 border"
-      >
-        <path
-          stroke="#18171f"
-          stroke-width="3"
-          fill="#18171f"
-          d="M1 5.607 4.393 9l8-8"
-        />
-      </svg>
+    <div className="flex cursor-pointer items-center gap-5">
+      <div className={` ${isActive ? active : base}`}>
+        <svg width="14" height="12" xmlns="http://www.w3.org/2000/svg">
+          <path
+            stroke="#18171F"
+            strokeWidth="3"
+            fill="none"
+            d="M1 5.607 4.393 9l8-8"
+          />
+        </svg>
+      </div>
       {name}
     </div>
   );
