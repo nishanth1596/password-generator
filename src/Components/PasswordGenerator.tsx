@@ -17,17 +17,17 @@ function PasswordGenerator() {
           <h2 className="text-base leading-[1.31rem]">Character Length</h2>
           <p className="text-NeonGreen-A4FFAF text-2xl leading-[1.98rem]">10</p>
         </div>
-        <label htmlFor="slider">
-          <input
-            className="mt-2 w-full cursor-pointer"
-            type="range"
-            id="slider"
-            name="slider"
-            defaultValue={10}
-            min={0}
-            max={20}
-          />
-        </label>
+
+        <input
+          className="mt-2 w-full"
+          type="range"
+          id="slider"
+          name="slider"
+          defaultValue={10}
+          min={0}
+          max={20}
+        />
+
         <div className="mt-8 space-y-4">
           <Check name="Include Uppercase Letters" />
           <Check name="Include Lowercase Letters" />
