@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-veryDarkGrey: #18171f;
+  --color-DarkGrey: #24232c;
+  --color-Grey: #817d92;
+  --color-AlmostWhite: #e6e5ea;
+  --color-NeonGreen: #a4ffaf;
+  --color-Red: #f64a4a;
+  --color-Orange: #fb7c58;
+  --color-Yellow: #f8cd65;
+  --color-14131b: #14131b;
+  --color-08070b: #08070b;
+
+  /* Font family */
+  --font-jetbrainsMono: "JetBrains Mono", "serif";
+}
+
+@layer components {
+  .HeadingM {
+    @apply text-2xl leading-[1.98rem] font-bold;
+  }
+
+  .BodyM {
+    @apply text-lg leading-6 font-bold;
+  }
+}
