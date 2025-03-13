@@ -90,7 +90,7 @@ function PasswordGen() {
         </div>
         <input
           type="range"
-          className="accent-NeonGreen mt-2 w-full md:mt-4"
+          className="accent-NeonGreen mt-2 w-full cursor-pointer md:mt-4"
           id="charLength"
           min="0"
           max="20"
