@@ -58,17 +58,17 @@ function PasswordGen() {
   }
 
   return (
-    <article className="mx-4 my-16 flex flex-col items-center md:mt-[8.31rem]">
-      <h2 className="text-Grey leading-[1.31rem] font-bold">
+    <article className="mx-4 my-16 flex flex-col items-center md:mx-0 md:mt-[8.31rem] md:mb-[12.25rem]">
+      <h2 className="text-Grey leading-[1.31rem] font-bold md:text-2xl md:leading-8">
         Password Generator
       </h2>
 
-      <div className="bg-DarkGrey mt-4 flex w-full max-w-[33.75rem] items-center justify-between p-4">
+      <div className="bg-DarkGrey mt-4 flex w-full max-w-[33.75rem] items-center justify-between p-4 md:px-8 md:py-5">
         <output className="HeadingM" aria-live="polite" role="status">
           {password ? (
-            <span>{password}</span>
+            <span className="HeadingM sm:HeadingL">{password}</span>
           ) : (
-            <span className="opacity-25">P4$5W0rD!</span>
+            <span className="HeadingM sm:HeadingL opacity-25">P4$5W0rD!</span>
           )}
         </output>
         <ButtonCopy
@@ -78,11 +78,11 @@ function PasswordGen() {
         />
       </div>
 
-      <div className="bg-DarkGrey mt-4 w-full max-w-[540px] p-4">
+      <div className="bg-DarkGrey mt-4 w-full max-w-[540px] p-4 sm:px-8 sm:pt-6 sm:pb-8">
         <div className="flex w-full items-center justify-between">
           <label
             htmlFor="charLength"
-            className="text-AlmostWhite leading-[1.31rem] font-bold"
+            className="text-AlmostWhite sm:bodyM leading-[1.31rem] font-bold"
           >
             Character Length
           </label>
@@ -90,7 +90,7 @@ function PasswordGen() {
         </div>
         <input
           type="range"
-          className="accent-NeonGreen mt-2 w-full"
+          className="accent-NeonGreen mt-2 w-full md:mt-4"
           id="charLength"
           min="0"
           max="20"
@@ -98,7 +98,7 @@ function PasswordGen() {
           onChange={(e) => setCharLength(Number(e.target.value))}
         />
 
-        <div className="mt-8 space-y-4">
+        <div className="mt-8 space-y-4 md:space-y-5">
           <CheckBox
             description="Include Uppercase Letters"
             name="upperCase"
@@ -127,8 +127,8 @@ function PasswordGen() {
           />
         </div>
 
-        <div className="bg-veryDarkGrey mt-8 flex items-center justify-between px-4 py-3.5">
-          <p className="text-Grey leading-[1.31rem] font-normal uppercase">
+        <div className="bg-veryDarkGrey mt-8 flex items-center justify-between px-4 py-3.5 sm:px-8 sm:py-5">
+          <p className="text-Grey sm:odyM leading-[1.31rem] font-normal uppercase">
             Strength
           </p>
 

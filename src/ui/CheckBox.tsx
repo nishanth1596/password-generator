@@ -14,7 +14,7 @@ function CheckBox({
   return (
     <button
       onClick={() => handleIsChecked(name)}
-      className="flex cursor-pointer items-center gap-5"
+      className="sm:BodyM flex cursor-pointer items-center gap-5"
     >
       <svg
         className={` ${isChecked ? "bg-NeonGreen" : "border-AlmostWhite border-2"} flex`}
