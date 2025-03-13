@@ -78,7 +78,7 @@ function PasswordGen() {
         />
       </div>
 
-      <div className="bg-DarkGrey mt-4 w-full max-w-[540px] p-4 sm:px-8 sm:pt-6 sm:pb-8">
+      <div className="bg-DarkGrey mt-4 w-full max-w-[540px] p-4 sm:px-8 sm:pt-6 sm:pb-8 md:mt-6">
         <div className="flex w-full items-center justify-between">
           <label
             htmlFor="charLength"
