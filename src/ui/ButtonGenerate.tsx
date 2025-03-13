@@ -6,7 +6,7 @@ function ButtonGenerate({ onClick }: ButtonGenerateProps) {
   return (
     <button
       onClick={onClick}
-      className="bg-NeonGreen group hover:bg-DarkGrey hover:text-NeonGreen text-DarkGrey hover:outline-NeonGreen mt-4 flex w-full cursor-pointer items-center justify-center gap-4 py-[18px] transition-colors duration-300 ease-in-out hover:outline-2"
+      className="bg-NeonGreen group hover:bg-DarkGrey hover:text-NeonGreen text-DarkGrey hover:outline-NeonGreen mt-4 flex w-full cursor-pointer items-center justify-center gap-4 py-[18px] transition-colors duration-300 ease-in-out hover:outline-2 md:mt-8"
     >
       <span className="sm:BodyM font-bold uppercase">Generate</span>
       <svg

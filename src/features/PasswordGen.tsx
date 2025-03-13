@@ -63,7 +63,7 @@ function PasswordGen() {
         Password Generator
       </h2>
 
-      <div className="bg-DarkGrey mt-4 flex w-full max-w-[33.75rem] items-center justify-between p-4 md:px-8 md:py-5">
+      <div className="bg-DarkGrey mt-4 flex w-full max-w-[33.75rem] items-center justify-between p-4 md:mt-8 md:px-8 md:py-5">
         <output className="HeadingM" aria-live="polite" role="status">
           {password ? (
             <span className="HeadingM sm:HeadingL">{password}</span>
