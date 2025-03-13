@@ -1,13 +1,23 @@
 type CheckBoxProps = {
   description: string;
   isChecked: boolean;
+  name: string;
+  handleIsChecked: (id: string) => void;
 };
 
-function CheckBox({ description, isChecked }: CheckBoxProps) {
+function CheckBox({
+  description,
+  isChecked,
+  name,
+  handleIsChecked,
+}: CheckBoxProps) {
   return (
-    <button className="flex cursor-pointer items-center gap-5">
+    <button
+      onClick={() => handleIsChecked(name)}
+      className="flex cursor-pointer items-center gap-5"
+    >
       <svg
-        className={`border-AlmostWhite ${isChecked ? "bg-NeonGreen" : ""} flex border-2`}
+        className={` ${isChecked ? "bg-NeonGreen" : "border-AlmostWhite border-2"} flex`}
         width="20"
         height="20"
         viewBox="0 0 20 20"

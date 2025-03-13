@@ -13,7 +13,7 @@
   --color-08070b: #08070b;
 
   /* Font family */
-  --font-jetbrainsMono: "JetBrains Mono", "serif";
+  --font-jetbrainsMono: "JetBrains Mono", "monospace";
 }
 
 @layer components {
